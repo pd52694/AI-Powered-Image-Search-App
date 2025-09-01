@@ -35,7 +35,7 @@ cd image-search-app
 pip install flask torch torchvision faiss-cpu pillow transformers
 ```
 3. Add images
-Put all of your .jpg/.png images into a photos/ folder or any other folder of your choosing.
+- Put all of your .jpg/.png images into a photos/ folder or any other folder of your choosing.
 4. Start the app
 ```bash
 python app.py
