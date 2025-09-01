@@ -29,4 +29,25 @@ A web application that uses OpenAI’s CLIP model and FAISS to enable text-based
 ```bash
 git clone https://github.com/your-username/image-search-app.git
 cd image-search-app
-``` 
+```
+2. Install dependencies
+```bash
+pip install flask torch torchvision faiss-cpu pillow transformers
+```
+3. Add images
+Put all of your .jpg/.png images into a photos/ folder or any other folder of your choosing.
+4. Start the app
+```bash
+python app.py
+```
+5. Search for images
+Open http://127.0.0.1:5000 in your browser, type in a description like "cute smiling puppies," and see the displayed images that match your input.
+
+** Simple Data Flow
+```mermaid
+flowchart TD
+    A["User Input (Text Description)"] --> B["CLIP Text Encoder"]
+    B --> C["FAISS Index"]
+    C --> D["Ranked Image Matches"]
+    D --> E["Results Displayed in Web App"]
+```
