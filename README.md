@@ -43,7 +43,7 @@ python app.py
 5. Search for images
 Open http://127.0.0.1:5000 in your browser, type in a description like "cute smiling puppies," and see the displayed images that match your input.
 
-** Simple Data Flow
+## Simple Data Flow
 ```mermaid
 flowchart TD
     A["User Input (Text Description)"] --> B["CLIP Text Encoder"]
