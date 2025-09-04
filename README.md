@@ -9,7 +9,7 @@ A web application that uses OpenAI’s CLIP model and FAISS to enable text-based
 - GPU/CPU acceleration supported by Pytorch
 
 ## How it Works
-1. Load a collection of images from a folder (like photos/)
+1. Load a collection of images from a folder (Ex: photos/)
 2. Generates image embeddings using CLIP
 3. Index embeddings in FAISS is used for fast similarity search
 4. User enters a text query that describes the image they want
